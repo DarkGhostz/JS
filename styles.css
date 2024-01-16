@@ -80,9 +80,17 @@ img{
     text-decoration: line-through;
 }
 /* Media query for mobile devices */
+/* Media query para dispositivos móveis */
 @media (max-width: 768px) {
     .container {
         max-width: 100%;
         margin: 50px auto 0;
+        text-align: center; /* Centralizar o conteúdo */
+    }
+
+    .task-button,
+    .add-task {
+        width: 100%; /* Faz os elementos ocuparem 100% da largura */
+        margin-bottom: 10px; /* Adicione espaçamento inferior entre os elementos */
     }
 }
