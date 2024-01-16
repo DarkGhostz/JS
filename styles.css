@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Corrigido para 'border-box' */
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     outline: none;
 }
@@ -21,10 +21,11 @@ body {
 .task-button {
     border: none;
     border-radius: 5px;
-    width: 100%; /* Faça com que seja 100% de largura */
+    width: calc(100% - 18px); /* Ajuste para levar em conta o padding do botão */
     height: 50px;
     padding-left: 15px;
     margin-bottom: 10px;
+    display: inline-block; /* Torna o campo de entrada e o botão "Adicionar" em linha */
 }
 
 .add-task {
@@ -35,9 +36,9 @@ body {
     color: #ffffff;
     font-size: 17px;
     padding: 0 18px;
-    float: right;
     cursor: pointer;
     font-weight: 700;
+    display: inline-block; /* Torna o campo de entrada e o botão "Adicionar" em linha */
 }
 
 .add-task:hover {
@@ -87,6 +88,6 @@ img {
     .add-task {
         float: none;
         width: 100%;
-        margin-top: 10px; /* Adicione margem superior para espaçamento */
+        margin-top: 10px;
     }
 }
